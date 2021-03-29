@@ -8,6 +8,9 @@
     <!-- Sony Badge -->
     <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
 
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+
     <!-- HTC Badge -->
     <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
