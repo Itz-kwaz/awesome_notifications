@@ -66,6 +66,8 @@ public class NotificationBuilder {
             pushNotification
         );
 
+        intent.putExtra("LOCK_SCREEN",true);
+
         Intent deleteIntent = buildNotificationIntentFromModel(
             context,
             Definitions.DISMISSED_NOTIFICATION,
