@@ -66,7 +66,6 @@ public class NotificationBuilder {
             pushNotification
         );
 
-        intent.putExtra("LOCK_SCREEN",true);
 
         Intent deleteIntent = buildNotificationIntentFromModel(
             context,
@@ -107,6 +106,8 @@ public class NotificationBuilder {
         String jsonData = pushNotification.toJson();
         intent.putExtra(Definitions.NOTIFICATION_JSON, jsonData);
         intent.putExtra(Definitions.NOTIFICATION_AUTO_CANCEL, pushNotification.content.autoCancel);
+        intent.putExtra("LOCK_SCREEN",true);
+
 
         return intent;
     }
